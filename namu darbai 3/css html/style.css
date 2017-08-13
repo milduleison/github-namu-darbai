@@ -1,0 +1,104 @@
+body {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #666;  
+    
+}
+
+
+article {
+    border: 1px solid #e7e7e7;
+    border-top: 5px solid #0974b3;
+    background-color: white;
+     
+      
+}
+h1 {
+    color: #0974b3;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 32px;
+}
+
+p{
+    margin: 10px;
+    margin-bottom: 17px;
+    padding-right: 10px;
+
+    
+}
+
+.pirmas{
+ width: 875px;
+ margin:15px;
+ height: 380px;
+ padding-left: 15px;
+ padding-right: 20px;
+ 
+}
+
+.antras{
+    float: left;
+    width: 428px;
+    height: 430px;
+    margin:15px;
+    padding: 5px;   
+}
+
+.trecias{
+    float: left;
+    width: 428px;
+    height: 430px;
+    margin:15px;
+    padding: 5px;
+    
+       
+}
+
+.nuotrauka{
+
+    width: 160px;
+    float: left;
+    margin-right: 22px;
+    margin-left: 10px;
+    
+}
+.data{
+    
+    position: relative;
+    margin-top: -20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+   
+}
+
+.a1 {
+margin-left: 10px;
+
+
+}
+
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/*
+    Pilko teksto spalva
+    #666;
+
+    Bloko viršutinio border ir h1 spalva:
+    #0974b3
+
+*/
+
+
+
+/* Fix float left issues */
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}

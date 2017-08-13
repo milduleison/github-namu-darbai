@@ -1,0 +1,115 @@
+body {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #666;  
+    
+}
+
+
+article {
+    border: 1px solid #e7e7e7;
+    border-top: 5px solid #e7e7e7;
+    background-color: white;
+       
+}
+
+article:hover {
+border-top-color: #0974b3; 
+margin-top: -5px;
+position: relative;
+}
+
+
+h1 {
+    color: #0974b3;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 32px;
+}
+ .juoda{
+    width: 130px;
+    height: 178px;
+    float: left; 
+    margin: 5px;
+    background: url(mg.jpg) no-repeat;
+    position: absolute;
+    display: none;
+    opacity: 0.4;
+   }
+
+ .parent:hover .juoda{
+    display:block;
+}
+.nuotrauka {
+    width: 130px;
+    float: left; 
+    margin: 5px;  
+    }
+
+.pirmas{
+    float: left;
+    width: 300px;
+    height: 450px;
+    margin: 5px;
+    position: relative;
+}
+
+
+.antras{
+    float: left;
+    width: 300px;
+    height: 450px;
+    margin: 5px;
+           
+}
+
+.trecias{
+    float: left;
+    width: 300px;
+    height: 450px;
+    margin: 5px;
+            
+}
+
+
+
+.data{
+    
+    position: relative;
+    margin-top: -20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+   }
+
+
+a:hover {
+     text-decoration: none;
+}
+    p {
+        margin: 10px;
+    }
+
+.a1 {
+    margin-left: 10px;
+}
+
+
+
+/*
+    Pilko teksto spalva
+    #666;
+
+    Bloko viršutinio border ir h1 spalva:
+    #0974b3
+
+*/
+
+
+
+/* Fix float left issues */
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}

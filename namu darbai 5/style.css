@@ -1,0 +1,60 @@
+body{
+    margin-left: 105px;
+    margin-right: 320px;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+   }
+
+.col-6 {
+    display: inline-block;
+    width: 49%;
+    min-width: 400px;
+    vertical-align: top;
+}
+
+.pirmas{
+}
+
+.antras{
+    margin-top: 10px;
+  
+}
+
+input{
+    padding: 5px;
+       
+   }
+
+.du {
+    margin-bottom: 10px;
+}
+
+.du label{
+    width: 100px;
+    float: left;
+    padding: 5px;
+}
+
+.antras button {
+        color: #fff;
+        padding: 10px 20px;
+        background-color: #5bc0de;
+        font-size: 18px;
+        border: 0;
+        margin-top: 20px;
+    }
+
+.antras button:hover {
+        background-color: #31b0d5;;
+    }
+
+
+.hantras button:active {
+        background-color: #269abc;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    }
+
+
