@@ -1,0 +1,17 @@
+body {
+  font-family: 'News Cycle', sans-serif;
+  padding: 20px;
+
+}
+
+.img-alpha  {
+  text-align: center;
+}
+
+.background {
+  background-image: url(robot.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 25px;
+  border: 1px solid black;
+}
