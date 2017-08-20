@@ -1,0 +1,127 @@
+/*
+    Header
+*/
+
+.hero {
+    background: url("../img/bg-3.jpg") 0 center;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+    margin-top: 56px;
+}
+    .hero h1 {
+        font-size: 39px;
+        text-transform: uppercase;
+    }
+
+    .hero p {
+        line-height: 1.5;
+        max-width: 50%; 
+    }
+
+
+a, header a:hover { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header a {
+    color: #333;
+}
+/* 
+.main-menu {
+    margin: 0;
+    padding-left: 0;
+    text-align: right;
+    font-size: 14px;
+}
+    .main-menu a:hover {
+        background-color: #eee;
+    }
+    .main-menu > li {
+        display: inline-block;
+        position: relative;
+    }
+        .main-menu > li > a {
+            padding: 15px;
+            display: inline-block;
+        }
+.dropdown {
+    position: absolute;
+    right: 0;
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-top-width: 0;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    display: none;
+}
+    .dropdown li a {
+        display: block;
+        padding: 10px 25px;
+        min-width: 100px;
+    }
+.main-menu > li:hover .dropdown {
+    display: block;
+} */
+
+
+/*
+    Services
+*/
+.services h1 {
+    font-weight: 400;
+    margin-top: 80px;
+}
+.services hr {
+    border-top: 1px solid #eee;
+    border-bottom: 0;
+}
+.services h3 {
+    color: #333;
+    font-weight: 400;
+}
+
+.services .services__text {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.services ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services .card {
+    height: 100%;
+}
+
+
+/* Uzdedam margin bottom iki LG rezoliucijos */
+@media (max-width: 991px) {
+    .services .row li { margin-bottom: 30px; }
+}
+
+/* XS */
+@media (max-width: 575px) {
+    .services .row li:last-child { margin-bottom: 0; }
+}
+
+/* SM + MD */
+@media (min-width: 576px) AND (max-width: 991px) {
+    .services .row li:nth-child(3),
+    .services .row li:last-child { margin-bottom: 0; }
+}
+
+
+main {
+    padding-bottom: 30px;
+}
+
+#id{
+    width: 50px;
+}
+
