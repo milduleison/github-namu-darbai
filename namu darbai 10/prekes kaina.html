@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Activate debugging with F12</h2>
+
+<p>Select "Console" in the debugger menu. Then click Run again.</p>
+
+<script>
+
+var array_personazai = ["Jon Snow", "Cersei Lannister", "Daenerys Targaryen", "Theon Greyjoy", "Tyrion Lannister", "Arya Stark"];
+
+console.log(array_personazai[0] + "   " + array_personazai[5]);
+
+</script>
+
+<div>
+<p>Paspauskite mygtuką prekės įvedimui</p>
+
+<button onclick="myFunction()">Skaičiaus įrašymas</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var kaina = prompt("Įveskite prekės kainą");
+	var pvm = (kaina*0.21).toFixed(2);
+	var sum = (parseFloat(kaina) + parseFloat(pvm)).toFixed(2);
+    if (kaina != null) {
+        document.getElementById("demo").innerHTML =
+        "Prekės kaina be PVM: " + kaina + "€" + "<br>" + "PVM: " + pvm + "€" + "<br>" + "Prekės kaina su PVM: " + sum + "€";		
+    }
+}
+</script>
+</div>
+
+</body>
+</html>

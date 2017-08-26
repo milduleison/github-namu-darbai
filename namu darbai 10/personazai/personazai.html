@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>
+<p>Pasirinkite skaičių nuo vieno iki šešių</p>
+
+<button onclick="myFunction()">Skaičiaus įrašymas</button>
+
+<p id="demo"></p>
+
+<script>
+
+var array_personazai = ["Jon Snow", "Cersei Lannister", "Daenerys Targaryen", "Theon Greyjoy", "Tyrion Lannister", "Arya Stark"];
+
+function myFunction() {
+    var skaicius = prompt("Įveskite pasirinktą skaičių nuo vieno iki šešių");
+
+	if (skaicius == 1) {
+        document.getElementById("demo").innerHTML = array_personazai[0];		
+    } else if (skaicius == 2){
+	 document.getElementById("demo").innerHTML = array_personazai[1];
+	 } else if (skaicius == 3){
+	 document.getElementById("demo").innerHTML = array_personazai[2];
+	 } else if (skaicius == 4){
+	 document.getElementById("demo").innerHTML = array_personazai[3];
+	 } else if (skaicius == 5){
+	 document.getElementById("demo").innerHTML = array_personazai[4];
+	 } else if (skaicius == 6){
+	 document.getElementById("demo").innerHTML = array_personazai[5];
+	 }
+}
+
+</script>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

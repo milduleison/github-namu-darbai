@@ -1,0 +1,9 @@
+Išdėliokite korteles naudodami flexbox:
+- kortelių aukštis vienodas (jei atsiranda daugiau teksto, visos kortelės vienoje eilutėje padidėja)
+- kortelės viduje, tekstas prasiplečia (flex-grow), kad nustumtų apatinę nuorodą žemyn
+- kortelės minimalus plotis: 200px. Jei ekranas per mažas, ji nusikelia į kitą eilutę
+- kortelės maksimalus plotis: 400px
+
+
+Pastaba: Kai naudosite flex-grow: 1, kad visos kortelės būtų vienodo pločio, dar reikalinga flex-basis taisykle: http://stackoverflow.com/questions/25066214/flexbox-not-giving-equal-width-to-elements
+Šioje vietoje galite tiesiog naudoti flex: 1
