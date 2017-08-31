@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+let skaiciumasyvas = [];
+while (true) {
+    let input = prompt("Koks tau skaicius patinka???");
+    let skaicius = parseFloat(input); //tai ka zmogus ivede padare skaiciumi
+    if(!isNaN(skaicius)){
+      skaiciumasyvas.push(skaicius);
+      document.write("Tavo įvesti skaičiai yra:"+ ' '+ + skaicius + "</br>");
+    } else {
+        break;
+        document.write("Blogai įvedei skaičių");
+    }
+}
+let sum = 0;
+for (skaicius = 0; skaicius < skaiciumasyvas.length; skaicius++)
+sum += skaiciumasyvas[skaicius];
+ document.write("Įvestų skaičių suma lygi "+ ' '+ + sum + "</br>");
+ document.write("Įvestų skaičių vidurkis lygus "+ ' '+  (sum / skaiciumasyvas.length) + "</br>");
+
+let didziausias = -Infinity;
+for (skaicius = 0; skaicius < skaiciumasyvas.length; skaicius++) {
+    if (skaiciumasyvas[skaicius] > didziausias) {
+    didziausias = skaiciumasyvas[skaicius];
+   }
+}
+ document.write("Didziausias ivestas skaicius"+ ' '+  didziausias + "</br>");
+
+let maziausias = Infinity;
+for (skaicius = 0; skaicius < skaiciumasyvas.length; skaicius++) {
+    if (skaiciumasyvas[skaicius] < maziausias) {
+    maziausias = skaiciumasyvas[skaicius];
+   }
+}
+ document.write("Maziausias ivestas skaicius"+ ' '+  maziausias + "</br>");
+
+</script>
+
+</body>
