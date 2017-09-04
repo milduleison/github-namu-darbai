@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+
+
+var salys = [
+{
+    "pavadinimas" : "Suomija",
+    "plotas" : 338400,
+    "gyventojuskaicius" : 5.47
+},
+
+ {
+    "pavadinimas" : "Portugalija",
+    "plotas" : 92391,
+    "gyventojuskaicius" : 10.26
+},
+
+{
+    "pavadinimas" : "Belgija",
+    "plotas" : 30528,
+    "gyventojuskaicius" : 11.26
+},
+
+{
+    "pavadinimas" : "Kroatija",
+    "plotas" : 56542,
+    "gyventojuskaicius" : 4.23
+},
+
+{
+    "pavadinimas" : "Lenkija",
+    "plotas" : 312679,
+    "gyventojuskaicius" : 38.01
+}
+]
+ 
+function getAreaPerCapita(){
+var i = 0;
+for(i = 0; i < salys.length; i++) 
+console.log(salys[i].pavadinimas+ " , joje gyvena "+ salys[i].gyventojuskaicius+ "mln gyventoju. Valstybės plotas:"+ salys[i].plotas + "km², plotas tenkantis vienam gyventojui:" +(salys[i].plotas / salys[i].gyventojuskaicius).toFixed(2) +"m²" + "</br>");
+}
+//function getAreaPerCapita(a, b) {
+//return (a/b).toFixed(2);
+//};
+</script>
+</body>
+</html>
