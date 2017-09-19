@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue App Demo</title>
+    <link rel="stylesheet" href="node_modules/skeleton-css/css/normalize.css">
+    <link rel="stylesheet" href="node_modules/skeleton-css/css/skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div class="container" id="app">
+        <h1>Muzikos albumai</h1>
+
+        <strong>Rodyti paveiksliukus:</strong>
+        <div class="u-cf">
+            <label>
+                <input type="radio" name="img-visibility" v-bind:value="true" v-model="isVisible">
+                Taip
+            </label>
+            <label >
+                <input type="radio" name="img-visibility" v-bind:value="false" v-model="isVisible">
+                Ne
+            </label>
+        </div>
+
+        <table v-for="album in albums">
+                <td v-if="isVisible">
+                    <img v-bind:src="'img/' + album.image" alt="Album Cover">
+                </td>
+                <td><strong>{{ album.artist}} - {{ album.album }}</strong></td>
+                <td>{{ album.date }}</td>
+                <td>{{ album.genre }}</td>
+        </table>
+
+        
+        
+    </div>
+    
+    <script type="text/javascript" src="db.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
